@@ -61,17 +61,19 @@ public class ProductServiceImpl implements ProductService {
         }
         return index;
     }
-    public List<Product> findByName (String name) {
+
+    public List<Product> findByName(String name) {
         List<Product> list = new ArrayList<>();
         for (int i = 0; i < productList.size(); i++) {
-            if (productList.get(i).getName().matches(name+".*")) {
-              list.add(productList.get(i));
+            if (productList.get(i).getName().matches(name + ".*")) {
+                list.add(productList.get(i));
             }
         }
         return list;
     }
-    public List<Product> findByPrice (double min, double max) {
-       List<Product> productList1 = new ArrayList<>();
+
+    public List<Product> findByPrice(double min, double max) {
+        List<Product> productList1 = new ArrayList<>();
         for (int i = 0; i < productList.size(); i++) {
             if ((productList.get(i).getPrice() <= max) && (productList.get(i).getPrice() >= min)) {
                 productList1.add(productList.get(i));

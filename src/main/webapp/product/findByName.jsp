@@ -12,7 +12,7 @@
 </head>
 <body>
 <form method="post">
-    <input type="text"name="name">
+    <input type="text" name="name">
     <button>Xem</button>
 </form>
 </body>

@@ -14,7 +14,7 @@
 <form method="post">
     <h1>${pDelete.name}</h1>
     <h1>${pDelete.price}</h1>
-    <button >Delete</button>
+    <button>Delete</button>
 </form>
 </body>
 </html>

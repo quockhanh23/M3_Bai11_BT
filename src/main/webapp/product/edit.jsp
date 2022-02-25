@@ -15,7 +15,6 @@
     <input type="number" name="id" value="${pEdit.id}">
     <input type="text" name="name" value="${pEdit.name}">
     <input type="number" name="price" value="${pEdit.price}">
-
     <button>Edit</button>
 </form>
 </body>

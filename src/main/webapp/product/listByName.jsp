@@ -14,8 +14,7 @@
 <body>
 <h2>Id, Name, Price</h2>
 <c:forEach items='${ListName}' var="sp">
-    <h2>${sp.id},${sp.name},${sp.price}
-    </h2>
+    <h2>${sp.id},${sp.name},${sp.price}</h2>
 </c:forEach>
 </body>
 </html>

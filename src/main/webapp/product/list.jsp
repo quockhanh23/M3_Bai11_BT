@@ -5,8 +5,8 @@
   Time: 9:01 PM
   To change this template use File | Settings | File Templates.
 --%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
@@ -14,7 +14,7 @@
 <body>
 <h1>Lisss</h1>
 <a href="/products?action=create">Create New </a>
-<c:forEach items='${requestScope["danhsach"]}' var="sp">
+<c:forEach items='${requestScope["danhSach"]}' var="sp">
     <h2>${sp.id},${sp.name},${sp.price}
         <a href="/products?action=edit&id=${sp.id}">Edit</a>
         <a href="/products?action=delete&id=${sp.id}">Delete</a>
